@@ -1,7 +1,14 @@
 // Home Content
 
 .home {
-
+  animation-name: awesome;
+  animation-duration: 15s;
+  animation-iteration-count: 3;
+  
+  @media @phone {
+    width: 100%;
+  }
+  
   .intro {
 
     h2 {
@@ -11,6 +18,11 @@
     p {
       padding:0 15px;
     }
+    img {
+      @media @phone {
+        width: 100%;
+      }
+    }
   
   }
 
@@ -19,6 +31,9 @@
     flex-wrap: wrap;
     width: 100%;
     .picbackground;
+    animation-name: stretch1;
+    animation-duration: 15s;
+    animation-iteration-count: 3;
 
     @media @phone {
       background-color: white;
@@ -45,6 +60,10 @@
   .visit-planets {
     padding: 15px;
     .mixin2;
+    animation-name: stretch3;
+    animation-duration: 15s;
+    animation-iteration-count: 3;
+
 
     @media @phone {
       background-color: white;
@@ -93,6 +112,7 @@
         border-radius: 10px;
         padding-top: 12px;
         text-align: center;
+        cursor: pointer;
 
         &:hover {
         background-color: white;
@@ -133,3 +153,29 @@
     }
   }
 }// home
+
+@keyframes stretch1 {
+  0%   {background-color:red;}
+  25%  {background-color:purple;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color: yellow;}
+}
+
+@keyframes stretch3 {
+  0%   {background-color: yellow; color: black; font-weight: bold;}
+  25%  {background-color: green; color: black; font-weight: bold;}
+  50%  {background-color: blue; color: white; font-weight: bold;}
+  75%  {background-color: purple; color: white; font-weight: bold;}
+  100% {background-color: red; color: yellow; font-weight: bold;}
+}
+
+
+@keyframes awesome {
+  0%   {background-color:#f4f4f4;}
+  25%  {background-color:green;}
+  50%  {background-color:blue;}
+  75%  {background-color:yellow;}
+  100% {background-color: red;}
+}
+
