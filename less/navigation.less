@@ -1,1 +1,36 @@
 // Navigation code here
+.head1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    animation-name: stretch;
+    animation-duration: 15s;
+    animation-iteration-count: 3;
+
+    @media @phone {
+        margin-top: 0;
+        width: 100%;
+    }
+
+
+
+    h1 {
+        font-size: 4rem;
+
+    }
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@keyframes stretch {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color: #f4f4f4;}
+  }

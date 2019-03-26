@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive layouts are a quick way to get content out cheaply for business but lacks the versatily to be handled on thousands of devices because care was only given to a few specific breakpoints.
+
+A fully responsive layout, on the other hand take more time and effort to create and are the standard long term projects should aim for.  They combine features of fixed, adaptive, and fluid websites together into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means it is coded first for small(mobile) screens and breakpoints are added as the screen expands to desktop size.  Desktop first means the opposite.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It makes it so that each rem point is a multiple of 10 pixels.  Ie 1.6rem = 16 pixels.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is basically using a language that has more features than plain css and then compiling into css to be rendered in the browser.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite is nesting.  I have a little bit of js programming experience, and thus I find the nested targeting of elements to be more logical.  The media queries being nested gives me a little bit of trouble because the bubbling factor,and it was a stretch and I was not able to complete it and forgot to ask my pm but @keyframes stumped me and I was not able to get it to work in less
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
